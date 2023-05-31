@@ -92,11 +92,11 @@ select {
 
 /* Back-ground Image */
 body {
-
+  background-color: lightgray;
 }
 
 main {
-  background-color: lightgray;
+  background-color: white;
   margin: 0 auto;
   padding: 0, 2rem;
   max-width: 960px;
@@ -127,6 +127,89 @@ h1 {
   flex-direction: column;
   padding-top: 3rem;
   padding-bottom: 2rem;
+}
+
+label{
+  width: 70px;
+  height: 30px;
+  position: relative;
+  display: block;
+  background: #ebebeb;
+  border-radius: 20px;
+  box-shadow: inset 0px 5px 15px rgba(0, 0, 0, 0.4) inset 0px -5px 15px rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+  transition: 0.3s;
+  margin: 3px 3px;
+}
+
+label:after {
+  content: "";
+  width: 29px;
+  height: 29px;
+  position: absolute;
+  left: 1px;
+  top: 1px;
+  background: linear-gradient(180deg, #AA0000, #b3995d);
+  border-radius: 40px;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.4);
+  transition: 0.3s;
+}
+
+input {
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
+
+input:checked + label {
+  background: #242424;
+}
+
+input:checked + label:after {
+  left: 69px;
+  transform: translateX(-100%);
+  background: linear-gradient(180deg, #777, #3a3a3a);
+}
+
+label:active:after {
+  width: 40px;
+}
+
+nav {
+  background-color: gray;
+}
+
+nav div {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+label svg {
+  position: absolute;
+  width: 28px;
+  top: 1px;
+  z-index: 100;
+}
+
+label svg.sun {
+  left: 1px;
+  fill: white;
+  transition: 0.3s;
+}
+
+label svg.moon {
+  left: 40px;
+  fill: #7e7e7e;
+  transition: 0.3s;
+}
+
+input:checked + label svg.sun {
+  fill: #7e7e7e;
+}
+
+input:checked + label svg.moon {
+  fill: white;
 }
 
 section {
@@ -177,7 +260,6 @@ footer {
   justify-content: flex-end;
   padding: 0.275rem;
   /* Temp */
-  background-color: gray;
   margin: 0;
 }
 
@@ -207,7 +289,7 @@ li:hover {
 
 .logo:hover {
   color: #b3995d;
-  animation: spin 2s linear 2;
+  animation: spin 2s linear 1;
   animation-delay: 0s, 0.3s;
   cursor: pointer;
 }
@@ -237,7 +319,7 @@ li:hover {
   justify-content: center;
 }
 
-svg {
+#lottie-animation svg {
   width: 50% !important;
   height: 50% !important;
 }
