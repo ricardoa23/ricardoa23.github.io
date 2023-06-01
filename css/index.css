@@ -1,11 +1,9 @@
-/* Box sizing rules */
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 
-/* Remove default margin */
 body,
 h1,
 h2,
@@ -80,17 +78,10 @@ select {
 }
 /* End of reset */
 
-
-
-
-
-/* Media Querires */
-
 * {
   font-family: serif, sans-serif;
 }
 
-/* Back-ground Image */
 body {
   background-color: lightgray;
 }
@@ -114,7 +105,6 @@ h2 {
 h1 {
   font-size: 2.5rem;
   color: #aa0000;
-
 }
 
 #contact h2 {
@@ -129,7 +119,7 @@ h1 {
   padding-bottom: 2rem;
 }
 
-label{
+label {
   width: 70px;
   height: 30px;
   position: relative;
@@ -149,7 +139,7 @@ label:after {
   position: absolute;
   left: 1px;
   top: 1px;
-  background: linear-gradient(180deg, #AA0000, #b3995d);
+  background: linear-gradient(180deg, #aa0000, #b3995d);
   border-radius: 40px;
   box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.4);
   transition: 0.3s;
@@ -271,7 +261,7 @@ footer {
 
 li {
   padding: 0.3rem;
-  color:#AA0000
+  color: #aa0000;
 }
 
 li:hover {
@@ -291,7 +281,7 @@ li.darkmode:hover {
 }
 
 .logo {
-  color: #AA0000;
+  color: #aa0000;
   margin: 0.5rem;
   transition: color 1s, transform 1.4s;
   transition-delay: 0s, 0.3s;
@@ -357,7 +347,7 @@ li.darkmode:hover {
 }
 
 #mail-button a {
-  color: #AA0000;
+  color: #aa0000;
   font-size: 1.7rem;
   font-weight: bold;
   text-decoration: none;
@@ -365,13 +355,13 @@ li.darkmode:hover {
 
 #mail-button:hover {
   background-color: #b3995d;
-  border-color: #AA0000;
+  border-color: #aa0000;
   transition: color 0.3s, background-color 0.3s;
   cursor: pointer;
 }
 
 #mail-button:hover a {
-  color: #AA0000;
+  color: #aa0000;
   transition: color 0.3s;
 }
 
@@ -402,35 +392,6 @@ li.darkmode:hover {
   transition: color 0.3s;
 }
 
-
-/* SF colors: gold:color: #b3995d red: #AA0000 */
-/* #mail-button {
-  border: solid 3px dodgerblue;
-  border-radius: 8px;
-  height: 50px;
-  width: 150px;
-  margin: 0 auto;
-}
-
-#mail-button a {
-  color: dodgerblue;
-  font-size: 1.7rem;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-#mail-button:hover {
-  color: white;
-  background-color: dodgerblue;
-  transition: color 0.3s, background-color 0.3s;
-  cursor: pointer;
-}
-
-#mail-button:hover a {
-  color: white;
-  transition: color 0.3s;
-} */
-
 @keyframes spin {
   from {
     transform: rotate(0deg);
@@ -439,3 +400,5 @@ li.darkmode:hover {
     transform: rotate(360deg);
   }
 }
+
+/* Media Querires */
