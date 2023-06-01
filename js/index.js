@@ -33,6 +33,7 @@ document
         li.style.color = "rgba(128,128,128, 0.75)";
       }
       document.querySelector("h1").style.color = "dodgerblue";
+      document.querySelector("#mail-button").id = "mail-button-dark";
     } else {
       loadAnimation("json/Mail-light.json");
       document.querySelector("body").style.backgroundColor = "lightgray";
@@ -47,6 +48,7 @@ document
       for (let li of document.querySelectorAll("h2")) {
         li.style.color = "unset";
       }
+      document.querySelector("#mail-button-dark").id = "mail-button";
     }
   });
 

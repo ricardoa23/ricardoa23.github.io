@@ -350,7 +350,6 @@ li.darkmode:hover {
 }
 
 #mail-button:hover {
-  color: white;
   background-color: #b3995d;
   border-color: #AA0000;
   transition: color 0.3s, background-color 0.3s;
@@ -362,7 +361,33 @@ li.darkmode:hover {
   transition: color 0.3s;
 }
 
-/* Dark Mode */
+#mail-button-dark {
+  border: solid 3px dodgerblue;
+  border-radius: 8px;
+  height: 50px;
+  width: 150px;
+  margin: 0 auto;
+}
+
+#mail-button-dark a {
+  color: white;
+  font-size: 1.7rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#mail-button-dark:hover {
+  background-color: white;
+  border-color: dodgerblue;
+  transition: color 0.3s, background-color 0.3s;
+  cursor: pointer;
+}
+
+#mail-button-dark:hover a {
+  color: dodgerblue;
+  transition: color 0.3s;
+}
+
 
 /* SF colors: gold:color: #b3995d red: #AA0000 */
 /* #mail-button {
