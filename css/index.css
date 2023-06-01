@@ -280,6 +280,16 @@ li:hover {
   cursor: pointer;
 }
 
+li.darkmode {
+  color: dodgerblue;
+}
+
+li.darkmode:hover {
+  color: white;
+  transition: color 0.3s;
+  cursor: pointer;
+}
+
 .logo {
   color: #AA0000;
   margin: 0.5rem;
