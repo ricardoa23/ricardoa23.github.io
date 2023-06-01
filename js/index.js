@@ -32,8 +32,17 @@ document
       for (let li of document.querySelectorAll("h2")) {
         li.style.color = "rgba(128,128,128, 0.75)";
       }
+      for(let logo of document.querySelectorAll(".logo")) {
+        logo.classList.add("logo-dark");
+        logo.classList.remove("logo");
+      }
       document.querySelector("h1").style.color = "dodgerblue";
       document.querySelector("#mail-button").id = "mail-button-dark";
+      document.querySelector("nav").style.backgroundColor = "black";
+      document.querySelector("footer").style.backgroundColor = "black";
+      document.querySelector("footer").style.color = "rgba(128,128,128, 0.75)";
+
+
     } else {
       loadAnimation("json/Mail-light.json");
       document.querySelector("body").style.backgroundColor = "lightgray";
@@ -48,7 +57,14 @@ document
       for (let li of document.querySelectorAll("h2")) {
         li.style.color = "unset";
       }
+      for(let logo of document.querySelectorAll(".logo-dark")) {
+        logo.classList.add("logo");
+        logo.classList.remove("logo-dark");
+      }
+      document.querySelector("nav").style.backgroundColor = "gray";
+      document.querySelector("footer").style.backgroundColor = "gray";
       document.querySelector("#mail-button-dark").id = "mail-button";
+      document.querySelector("footer").style.color = "unset";
     }
   });
 

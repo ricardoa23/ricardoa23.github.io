@@ -304,6 +304,20 @@ li.darkmode:hover {
   cursor: pointer;
 }
 
+.logo-dark {
+  color: dodgerblue;
+  margin: 0.5rem;
+  transition: color 1s, transform 1.4s;
+  transition-delay: 0s, 0.3s;
+}
+
+.logo-dark:hover {
+  color: white;
+  animation: spin 2s linear 1;
+  animation-delay: 0s, 0.3s;
+  cursor: pointer;
+}
+
 .tech-container {
   display: flex;
   justify-content: space-around;
