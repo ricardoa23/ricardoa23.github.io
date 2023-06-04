@@ -110,6 +110,10 @@ h1 {
 #contact h2 {
   font-size: 2rem;
 }
+
+#passion h2 {
+  font-size: 2rem;
+}
 .container {
   display: flex;
   justify-content: center;
@@ -239,7 +243,7 @@ p {
 
 footer {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   padding: 1.7rem;
   margin: 0;
   background-color: gray;
@@ -390,6 +394,12 @@ li.darkmode:hover {
 #mail-button-dark:hover a {
   color: dodgerblue;
   transition: color 0.3s;
+}
+
+.jet {
+  width: 50px;
+  height: 50px;
+  object-position: center;
 }
 
 @keyframes spin {
